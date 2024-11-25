@@ -6,8 +6,8 @@ Run the following commands:
 - cp .env.example .env
 - docker compose build
 - docker compose up -d
-- docker exec web php artisan migrate
-- docker exec web php artisan db:seed
+- docker exec web php artisan migrate --force
+- docker exec web php artisan db:seed --force
 ```
 
 Laravel app is available under http://localhost:8080
