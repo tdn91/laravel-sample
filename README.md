@@ -3,6 +3,7 @@
 Run the following commands:
 ```
 - git clone
+- cp .env.example .env
 - docker compose build
 - docker compose up -d
 - docker exec web php artisan migrate
