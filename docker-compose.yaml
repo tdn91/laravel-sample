@@ -7,7 +7,7 @@ services:
       target: web
       context: .
     env_file:
-      - .env
+      - .env.example
     ports:
       - "8000:80"
     volumes:
@@ -15,12 +15,12 @@ services:
     depends_on:
       - db
     container_name: web
-  
+
   db:
     platform: "linux/amd64"
     image: postgres:latest
     env_file:
-      - .env
+      - .env.example
     environment:
       POSTGRES_DB: ${DB_DATABASE}
       POSTGRES_USER: ${DB_USERNAME}
