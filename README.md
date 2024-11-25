@@ -10,7 +10,7 @@ Run the following commands:
 - docker exec web php artisan db:seed --force
 ```
 
-Laravel app is available under http://localhost:8080
+Laravel app is available under http://localhost:8000
 
 ## Requests / Responses examples
 ### Get token
